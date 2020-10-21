@@ -67,7 +67,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(originalFlavors){
-    if (originalFlavors.length = 31){
+    if (originalFlavors.length === 31){
         return true
     }
     
@@ -149,11 +149,10 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(originalFlavors, "Rocky Road" ) {
+function removeFlavorByName(originalFlavors, flavor) {
     const index = originalFlavors.indexOf(flavor);
     
     originalFlavors.splice(index, 1);
-
 
     return originalFlavors
 }
@@ -184,12 +183,17 @@ Use the filterByWord function below to do the following:
 
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 */
-function filterByWord(originalFlavors, "chocolate") {
-    let count = 0;
-    while 
-    
-}
+function filterByWord(originalFlavors, flavor) {
+    const results = [];
+        for (let i = 0; i < originalFlavors.length; i++) {
 
+            if (originalFlavors[i], (flavor)){
+                results.push(originalFlavors[i]);
+            }
+        }
+    return results;
+}
+filterByWord(originalFlavors, "Chocolate");
 
 
 
